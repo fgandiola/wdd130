@@ -16,9 +16,16 @@ main {
 main img {
     width: 150px;
     height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
 }
 
-h1, h2 {
+h1 {
+    color: rgb(34, 34, 97);
+}
+
+h2 {
     color: rgb(34, 34, 97);
 }
 
