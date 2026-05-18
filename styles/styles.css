@@ -2,6 +2,17 @@
     --primary-color: rgb(34, 34, 97);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 nav {
     background-color: var(--primary-color);
     padding: 10px;
@@ -10,7 +21,7 @@ nav {
 nav a{
     color: white;
     display: block;
-    padding: 20px;
+    padding: 10px;
 }
 
 main {
@@ -22,11 +33,14 @@ main img {
     height: auto;
     border: 1px solid black;
     padding: 2px;
+    margin: 0 1rem 0.5rem 1rem;
     box-shadow: 0 0 30px gray;
+    float: right;
 }
 
 h1 {
     color: var(--primary-color);
+    margin: 1rem;
 }
 
 h2 {
@@ -42,17 +56,22 @@ img {
 }
 
 p {
-    padding: 0;
+    padding: 1px;
+    margin: 1rem;
+}
+
+ul {
+    clear: both;
+}
+
+ul li {
+    margin-left: 1rem;
 }
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 /0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
     text-align: center;
+    position: relative;
 }
 
 aside img {
@@ -60,8 +79,28 @@ aside img {
     height: auto;
 }
 
+aside h2 {
+    position: absolute;
+    top: 30px;
+    left: 110px;
+}
+
+aside p {
+    margin: 5px;
+}
+
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+}
+
+/* Class selectors */
+
+.box {
+    margin: 1rem;
+    border: 2px solid rgb(0 0 70 /0.5);
+    padding: 1rem;
+    background-color: #ddd;
+    color: rgb(0 0 70/0.7);
 }
