@@ -1,5 +1,9 @@
+:root {
+    --primary-color: rgb(34, 34, 97);
+}
+
 nav {
-    background-color: rgb(34, 34, 97);
+    background-color: var(--primary-color);
     padding: 10px;
 }
 
@@ -22,11 +26,11 @@ main img {
 }
 
 h1 {
-    color: rgb(34, 34, 97);
+    color: var(--primary-color);
 }
 
 h2 {
-    color: rgb(34, 34, 97);
+    color: var(--primary-color);
 }
 
 img {
