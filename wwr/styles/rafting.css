@@ -22,7 +22,11 @@ header, main, footer {
     width: 840px;
     margin: 0 auto;
     background-color: var(--primary-color);
+}
 
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
 }
 
 header {
@@ -34,20 +38,24 @@ header {
 header img {
     width: 175px;
     height: auto;
+    grid-column: 1/2;
 }
 
-nav ul {
+header nav {
+    grid-column: 2/3;
+}
+
+header nav ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     background-color: var(--secondary-color);
 }
 
-nav a {
+header nav a {
     text-decoration: none;
     color: var(--primary-color);
     display: block;
-
 }
 
 h1, h2 {
@@ -73,15 +81,24 @@ h2 {
     color: var(--secondary-color);
 }
 
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
-}
+
 
 footer {
     color: #111;
     text-align: center;
     border-top: 1px solid black;
+    display: grid;
+    grid-template-columns: 100px 640px 100px;
+}
+
+footer p {
+    grid-column: 2/3;
+}
+
+footer nav {
+    grid-column: 3/4;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .hero {
@@ -117,5 +134,9 @@ footer {
 
 .socialmedia a {
     text-decoration: none;
+}
+
+#end-section {
+    margin-bottom: 0px;
 }
 
