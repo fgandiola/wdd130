@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main {
+    max-width: 500px;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    padding: 1rem;
+    background-color: rgb(0 0 50 / 0.9);
+    color: #fff;
+}
+
+h1 {
+    margin: .5rem;
+}
+
+form {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    padding: 1rem;
+    background-color: rgb(0 0 50 / 0.3);
+}
+
+code {
+    display: block;
+}
+
+footer {
+    font-size: 0.8em;
+    color: #111;
+    text-align: center;
+}
