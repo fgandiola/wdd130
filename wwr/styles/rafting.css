@@ -172,3 +172,7 @@ footer nav {
     margin-bottom: 0px;
 }
 
+#map {
+    display: flex;
+    justify-content: space-around;
+}
