@@ -31,33 +31,37 @@
         <section id="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d40945.06348711853!2d-60.07566909658857!3d-31.111281781354734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1781297136503!5m2!1ses-419!2sar" width="375" height="280" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <form>
-                <div>
-                    <label for="name" class="column1">Name</label>
-                    <input type="text" id="name" name="name" class="column2" required>
-                </div>
-                <div>
-                    <label for="email" class="column1">Email</label>
-                    <input type="email" id="email" name="email" class="column2">
-                </div>
-                <div>
-                    <fieldset>
-                        <legend class="column1">Message Purpose</legend>
-                        <input class="column2" type="radio" id="inquiry" name="inquiry">
+                <fieldset>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Type your name here..." required>
+                </fieldset>
+                <fieldset>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Type your email here..." required>
+                </fieldset>
+                <fieldset class="radio-group">
+                    <legend>Message Purpose</legend>
+                    <div class="radio-option">
+                        <input type="radio" id="inquiry" name="inquiry">
                         <label for="inquiry">General Inquiry</label>
+                    </div>
+                    <div class="radio-option">
                         <input type="radio" id="reservation" name="reservation">
                         <label for="reservation">Reservation Question</label>  
+                    </div>
+                    <div class="radio-option">
                         <input type="radio" id="suggestion" name="suggestion">
                         <label for="suggestion">Website Suggestion</label>
-                    </fieldset>
-                </div>
-                <div>
+                    </div>
+                </fieldset>
+                <fieldset class="message">
                     <label for="message">Message</label>
                     <textarea id="message" name="message" placeholder="Type here"></textarea>
-                </div>
-                <div>
-                    <label for="newsletter">Please Suscribe me to the monthyly newsletter</label>
+                </fieldset>
+                <fieldset>
                     <input type="checkbox" id="newsletter" name="newsletter">
-                </div>
+                    <label for="newsletter">Please Suscribe me to the monthyly newsletter</label>
+                </fieldset>
                 <button type="submit">Get in Touch!</button>
             </form>
         </section>
