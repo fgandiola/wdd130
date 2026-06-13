@@ -21,30 +21,34 @@
     </nav>
     </header>
     <main>
-        <section>
+        <div class="title">
             <h1>Splash White Water Rafting</h1>
             <p>Paseo Colón & Boulevard Gales</p>
             <p>Helvecia, Santa Fe</p>
             <p>+54 999 999 999</p>
             <p>info@splashrafting.com</p>
-        </section>
+        </div>
         <section id="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d40945.06348711853!2d-60.07566909658857!3d-31.111281781354734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1781297136503!5m2!1ses-419!2sar" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d40945.06348711853!2d-60.07566909658857!3d-31.111281781354734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1781297136503!5m2!1ses-419!2sar" width="375" height="280" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <form>
                 <div>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
+                    <label for="name" class="column1">Name</label>
+                    <input type="text" id="name" name="name" class="column2" required>
                 </div>
                 <div>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
+                    <label for="email" class="column1">Email</label>
+                    <input type="email" id="email" name="email" class="column2">
                 </div>
                 <div>
-                    <label for="purpose">Message Purpose</label>
-                    <input type="radio" id="purpose" name="purpose">
-                    <option value="1">General Inquiry</option>
-                    <option value="2">Reservation Question</option>
-                    <option value="3">Website Suggestion</option>
+                    <fieldset>
+                        <legend class="column1">Message Purpose</legend>
+                        <input class="column2" type="radio" id="inquiry" name="inquiry">
+                        <label for="inquiry">General Inquiry</label>
+                        <input type="radio" id="reservation" name="reservation">
+                        <label for="reservation">Reservation Question</label>  
+                        <input type="radio" id="suggestion" name="suggestion">
+                        <label for="suggestion">Website Suggestion</label>
+                    </fieldset>
                 </div>
                 <div>
                     <label for="message">Message</label>
@@ -57,20 +61,23 @@
                 <button type="submit">Get in Touch!</button>
             </form>
         </section>
-        <section id="end-section">
+        <section class="employees" id="end-section">
             <h2>We Are Here to Serve You</h2>
             <div>
                 <figure>
-                    <img>
-                    <figcaption></figcaption>
+                    <img src="images/thompson-profile.webp" alt="Photo of Randall Thompson">
+                    <figcaption class="names">Randall Thompson</figcaption>
+                    <figcaption>Customer Service Manager</figcaption>
                 </figure>
                 <figure>
-                    <img>
-                    <figcaption></figcaption>
+                    <img src="images/farrell-profile.webp" alt="Photo of Eliza Farrell">
+                    <figcaption class="names">Eliza Farrell</figcaption>
+                    <figcaption>HR Coordinator</figcaption>
                 </figure>
                 <figure>
-                    <img>
-                    <figcaption></figcaption>
+                    <img src="images/edwards-profile.webp" alt="Photo of Mark Edwards">
+                    <figcaption class="names">Mark Edwards</figcaption>
+                    <figcaption>Legal Representative</figcaption>
                 </figure>
             </div>
         </section>      
