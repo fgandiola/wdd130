@@ -306,8 +306,9 @@ tfoot tr {
     grid-template-columns: 3fr 4fr;
 }
 
-.radio-group legend {
+.radio-group p {
     grid-column: 1 / 2;
+    grid-row: 1 / 4;
 }
 
 .radio-option {
