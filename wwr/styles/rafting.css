@@ -200,6 +200,10 @@ footer nav {
     text-align: center;
 }
 
+.title h1 {
+    margin: 0px 5px 10px 5px;
+}
+
 .title p {
     padding: 1px;
     font-weight: 700;
@@ -327,4 +331,12 @@ footer nav {
     border: 1px solid black;
     padding: 10px 15px;
     border-radius: .5rem;
+}
+
+#contact-us {
+    position: relative;
+}
+
+#contact-us article {
+    position: absolute;
 }
