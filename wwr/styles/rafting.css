@@ -59,6 +59,7 @@ header nav ul {
     padding: 15px 0 15px 0;
     background-color: var(--accent2-color);
     border: 1px solid black;
+    border-radius: .5rem;
 }
 
 header nav a {
@@ -80,6 +81,7 @@ h2 {
     padding: 10px;
     text-align: center;
     color: var(--primary-color);
+    border-radius: .5rem;
 }
 
 form {
@@ -124,15 +126,11 @@ figure {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     text-align: center;
     margin: 10px;
     font-size: small;
     gap: 1rem;
-}
-
-figure img {
-    width: 125px;
 }
 
 footer {
@@ -220,6 +218,10 @@ footer nav {
     grid-template-columns: repeat(5, 1fr);
 }
 
+.figures figure img {
+    width: 125px;
+}
+
 .socialmedia a {
     text-decoration: none;
 }
@@ -269,11 +271,60 @@ footer nav {
     display: grid;
 }
 
+.offerings {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.offerings figure img {
+    width: 200px;
+    border: 2px solid black;
+}
+
 #end-section {
+    margin-top: 0px;
     margin-bottom: 0px;
 }
 
 #map {
     display: flex;
     justify-content: space-around;
+    padding: 10px 0;
+}
+
+#call-to-action {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#call-to-action div {
+    margin: 2px 15px 2px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+}
+
+#call-to-action form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    font-size: medium;
+    font-weight: 700;
+    background-color: var(--accent1-color);
+    margin: 20px 20px 5px 5px;
+    border-radius: .5rem;
+    height: 260px;
+}
+
+#call-to-action a {
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    border: 1px solid black;
+    padding: 10px 15px;
+    border-radius: .5rem;
 }
