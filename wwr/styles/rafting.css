@@ -154,6 +154,38 @@ footer nav {
     gap: 4px;
 }
 
+table {
+    border-collapse: collapse;
+    border: 2px solid gray;
+    font-size: .9rem;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid gray;
+    padding: 8px 12px;
+    text-align: center;
+}
+
+tbody td {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+tbody th {
+    color: var(--primary-color);
+    background-color: var(--accent2-color);
+}
+
+thead th,
+tfoot tr {
+    color: var(--secondary-color);
+    background-color: var(--accent1-color);
+    font-weight: 700;
+}
+
 .hero {
     position: relative;
 }
@@ -183,6 +215,7 @@ footer nav {
     bottom: 5px;
     border: 1px solid rgb(0 0 0/0.3);
     box-shadow: 0 0 10px rgb(0 0 0/0.2);
+    opacity: 0.9;
 }
 
 .hero p {
@@ -222,18 +255,27 @@ footer nav {
     grid-template-columns: repeat(5, 1fr);
 }
 
+.history img {
+    width: 200px;
+    border: 5px solid var(--accent1-color);
+}
+
 .figures figure img {
     width: 125px;
+    border: 2px solid var(--accent1-color);
 }
 
 .socialmedia a {
     text-decoration: none;
 }
 
+.socialmedia img {
+    width: 40px;
+}
+
 .employees {
     display: block;
     background-color: var(--accent1-color);
-    color: var(--secondary-color);
     border: 1rem solid var(--primary-color);
     box-shadow: 0 0 3px black;
 }
@@ -250,6 +292,7 @@ footer nav {
 
 .employees img {
     border: 1px solid var(--secondary-color);
+    width: 120px;
     box-shadow: 0 0 5px black;
 }
 
@@ -282,7 +325,11 @@ footer nav {
 
 .offerings figure img {
     width: 200px;
-    border: 2px solid black;
+    border: 5px solid var(--accent1-color);
+}
+
+.highlight {
+    font-weight: 700;
 }
 
 #end-section {
@@ -331,6 +378,7 @@ footer nav {
     border: 1px solid black;
     padding: 10px 15px;
     border-radius: .5rem;
+    text-decoration: none;
 }
 
 #contact-us {
@@ -339,4 +387,17 @@ footer nav {
 
 #contact-us article {
     position: absolute;
+    top: 100px;
+    right: 20px;
+    color: var(--accent2-color);
+    background-color: var(--accent1-color);
+    border: 1px solid black;
+    opacity: 0.9;
+    border-radius: .5rem;
+}
+
+#contact-us a {
+    list-style: none;
+    color: var(--secondary-color);
+    font-weight: 700;
 }
